@@ -9,7 +9,7 @@ vim.keymap.set('n', '<leader>L', ':Lazy<CR>',
 --tab keybinds
 vim.keymap.set('n', '<leader>Tn', ":tabnew<CR>",
     { desc = "Open new Tab", noremap = true, silent = true})
-vim.keymap.set('n', '<leader>Tt', ":tabnew term<CR>", 
+vim.keymap.set('n', '<leader>Tt', ":tab term<CR>", 
     { desc = "Open new Terminal Tab", noremap = true, silent = true})
 vim.keymap.set('n', '<leader>Td', ":tabclose<CR>",
     { desc = "Close active Tab", noremap = true, silent = true})
