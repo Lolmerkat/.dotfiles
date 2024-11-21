@@ -7,7 +7,7 @@ local config = wezterm.config_builder()
 config.keys = {
 	{ key = 'V', mods = 'CTRL', action = act.PasteFrom 'Clipboard' },
 	{ key = 'C', mods = 'CTRL|SHIFT', action = act.CopyTo 'ClipboardAndPrimarySelection' },
-    	{ key = 'W', mods = 'CTRL|SHIFT' , action = act.CloseCurrentTab {confirm = true} }
+    { key = 'W', mods = 'CTRL|SHIFT' , action = act.CloseCurrentTab {confirm = true} },
 }
 
 -- This is where you actually apply your config choices
@@ -59,7 +59,7 @@ config.colors = {
 	}
 }
 
-config.font = 
+config.font =
 	wezterm.font('JetBrains Mono', { weight = 'Medium'})
 
 -- and finally, return the configuration to wezterm
