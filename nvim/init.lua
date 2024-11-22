@@ -6,5 +6,3 @@ require("config.harpoon")
 require("config.lualine")
 
 vim.cmd([[colorscheme tokyonight]])
-
-

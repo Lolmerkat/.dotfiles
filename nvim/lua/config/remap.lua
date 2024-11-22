@@ -6,6 +6,10 @@ vim.keymap.set('n', "<leader>ff", ts_builtin.find_files,
 vim.keymap.set('n', '<leader>L', ':Lazy<CR>',
     { desc = "Open Lazy.nvim", noremap = true, silent = true })
 
+-- vim general
+vim.keymap.set('n', '<leader><leader>', '<CR>',
+    { desc = "Enter", noremap = true, silent = true})
+
 --tab keybinds
 vim.keymap.set('n', '<leader>Tn', ":tabnew<CR>",
     { desc = "Open new Tab", noremap = true, silent = true})
