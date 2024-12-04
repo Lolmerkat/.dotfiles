@@ -24,8 +24,6 @@ vim.keymap.set("n", "<C-n>", function() harpoon:list():select(3) end)
 vim.keymap.set("n", "<C-s>", function() harpoon:list():select(4) end)
 
 -- Vim general
-vim.keymap.set('n', '<leader><leader>', '<CR>',
-    { desc = "Enter", noremap = true, silent = true})
 vim.keymap.set({'i', 'n'}, '<C-S>w',
     function ()
         vim.cmd('write')
