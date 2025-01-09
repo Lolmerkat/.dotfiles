@@ -48,3 +48,12 @@ vim.keymap.set('n', '<leader>T<', ":tabprevious<CR>",
     { desc = "Switch to prev. Tab", noremap = true, silent = true})
 vim.keymap.set('n', '<leader>T>', ":tabnext<CR>",
     { desc = "Switch to next Tab", noremap = true, silent = true})
+
+-- Obsidian
+vim.keymap.set('n', 'gf', function()
+    if (require('obsidian').util.cursor_on_markdown_link()) then
+        return "<cmd>ObsidianFollowLink<CR>"
+    else
+        return "gf"
+    end
+end, { noremap = false, expr = true })

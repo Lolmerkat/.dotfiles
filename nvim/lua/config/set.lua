@@ -15,4 +15,5 @@ vim.opt.termguicolors = true
 vim.opt.colorcolumn = "80"
 vim.opt.incsearch = true
 
+vim.opt.spelllang = { 'en', 'de' }
 
