@@ -1,3 +1,5 @@
+@echo off
+
 :: File Aliases
 
 DOSKEY alias_file=%config_home%\windows-aliases.bat
