@@ -1,4 +1,5 @@
-vim.keymap.set("n", "<leader>pv", ':NvimTreeOpen<CR>', { desc = 'Open NvimTree', noremap = true, silent = true})
+vim.keymap.set("n", "<leader>pv", ':NvimTreeToggle<CR>', { desc = 'Toggle NvimTree', noremap = true, silent = true})
+vim.keymap.set({ 'i', 'v' }, "hj", '<ESC>', { desc = 'Escape', noremap = false, silent = true })
 
 -- Telescope
 local ts_builtin = require('telescope.builtin')
