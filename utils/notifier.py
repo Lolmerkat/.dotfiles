@@ -10,7 +10,7 @@ def ensure_dependencies():
             __import__(package)
         except ImportError:
             print(f"Installing {package}...")
-            subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+            subprocess.check_call([sys.executable, "-m", "pip", "install", package], creationflags=subprocess.CREATE_NO_WINDOW)
             
     # Now we can safely import plyer
     global plyer
@@ -23,12 +23,12 @@ import subprocess
 from pathlib import Path
 
 def get_current_branch() -> str:
-    return subprocess.check_output(['git', 'branch', '--show-current']).decode('utf-8').strip()
+    return subprocess.check_output(['git', 'branch', '--show-current'], creationflags=subprocess.CREATE_NO_WINDOW).decode('utf-8').strip()
 
 def has_changes():
-    subprocess.run(['git', 'fetch', 'origin'], check=True)
-    local_hash = subprocess.check_output(['git', 'rev-parse', 'HEAD']).decode('utf-8').strip()
-    remote_hash = subprocess.check_output(['git', 'rev-parse', 'origin/master']).decode('utf-8').strip()
+    subprocess.run(['git', 'fetch', 'origin'], check=True, creationflags=subprocess.CREATE_NO_WINDOW)
+    local_hash = subprocess.check_output(['git', 'rev-parse', 'HEAD'], creationflags=subprocess.CREATE_NO_WINDOW).decode('utf-8').strip()
+    remote_hash = subprocess.check_output(['git', 'rev-parse', 'origin/master'], creationflags=subprocess.CREATE_NO_WINDOW).decode('utf-8').strip()
     return local_hash != remote_hash
 
 def get_commit_difference() -> tuple[int, int]:
@@ -36,7 +36,7 @@ def get_commit_difference() -> tuple[int, int]:
     try:
         output = subprocess.check_output([
             'git', 'rev-list', '--left-right', '--count', 'HEAD...@{upstream}'
-        ]).decode('utf-8').strip()
+        ], creationflags=subprocess.CREATE_NO_WINDOW).decode('utf-8').strip()
         ahead, behind = map(int, output.split('\t'))
         return ahead, behind
     except subprocess.CalledProcessError:
