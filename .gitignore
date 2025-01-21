@@ -2,6 +2,9 @@
 /whatscli
 /spotify-tui
 
+/scoop
+/superfile
+
 /nvim/lazy-lock.json
 
 /utils/aliad_file
