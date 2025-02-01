@@ -5,5 +5,6 @@ require("config.set")
 require("config.harpoon")
 require("config.lualine")
 require("config.autocommand")
+require("config.macro")
 
 vim.cmd([[colorscheme tokyonight]])
