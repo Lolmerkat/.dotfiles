@@ -5,7 +5,6 @@
 /scoop
 /superfile
 
-/nvim/lazy-lock.json
+nvim/lazy-lock.json
 
-/utils/aliad_file
-
+spotify-player/app.toml
