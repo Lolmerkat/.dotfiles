@@ -1,4 +1,4 @@
-# .dotfile
+# .dotfiles
 
 My personal configuration files.
 
@@ -10,4 +10,4 @@ This directory contains some (for me) important utils such as:
 - [notifier.pyw]
     - This files is used to:
         a) check for differences from the local dotfiles to the remote repository
-        b) 
+        b)
