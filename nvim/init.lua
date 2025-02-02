@@ -8,7 +8,7 @@ require("config.macro")
 
 -- autocommands
 require("config.autocommand.markdown")
-require("config.autocommand.scss")
+require("config.autocommand.ccc")
 require("config.autocommand.batch")
 require("config.autocommand.trailing-whitespace")
 
