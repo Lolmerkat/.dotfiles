@@ -58,3 +58,7 @@ vim.keymap.set('n', 'gf', function()
         return "gf"
     end
 end, { noremap = false, expr = true })
+
+-- Ccc
+vim.keymap.set({'n'}, '<leader>pc', "<cmd>CccPick<CR>",
+    { desc = "Open Ccc picker", noremap = true, silent = true })
