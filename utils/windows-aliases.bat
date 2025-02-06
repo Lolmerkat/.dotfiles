@@ -2,11 +2,11 @@
 
 :: File Aliases
 
-SET alias_file=%config_home%\utils\windows-aliases.bat
+SET alias_file=%XDG_CONFIG_HOME%\utils\windows-aliases.bat
 
 :: Directory Aliases
 
-DOSKEY cfg=nvim %config_home%
+DOSKEY cfg=nvim %XDG_CONFIG_HOME%
 
 :: Command aliases
 
