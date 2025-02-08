@@ -5,6 +5,7 @@ return {
     dependencies = {
         "nvim-tree/nvim-web-devicons",
     },
+    cmd = { "NvimTreeToggle", "NvimTreeOpen" },
     config = function ()
         require("nvim-tree").setup {}
     end
