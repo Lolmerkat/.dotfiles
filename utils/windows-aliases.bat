@@ -15,5 +15,6 @@ DOSKEY mv=move $*
 DOSKEY aliases=nvim %alias_file%
 DOSKEY alias=echo DOSKEY $1=$2 >> %alias_file%
 DOSKEY export=echo SET $1=$2 >> %alias_file%
+DOSKEY spt=spotify_player
 
 :: Command-added aliases
