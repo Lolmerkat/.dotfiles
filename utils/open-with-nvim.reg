@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\Open with Neovim]
+@="Open with Neovim"
+"Icon"="C:\\Program Files\\Neovim\\bin\\nvim.ico"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\Open with Neovim\command]
+@="\"C:\\Program Files\\WezTerm\\wezterm-gui.exe\" start -- nvim \"%1\""
