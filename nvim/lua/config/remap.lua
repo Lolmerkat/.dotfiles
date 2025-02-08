@@ -14,6 +14,10 @@ vim.keymap.set('n', '<leader>fb', ts_builtin.buffers,
 vim.keymap.set('n', '<leader>L', ':Lazy<CR>',
     { desc = "Open Lazy.nvim", noremap = true, silent = true })
 
+-- Mason
+vim.keymap.set('n', '<leader>M', '<cmd>Mason<CR>',
+    { desc = "Open Mason", noremap = true, silent = true })
+
 -- Harpoon
 local harpoon = require("harpoon")
 vim.keymap.set('n', "<C-a>", function() harpoon:list():add() end,
