@@ -19,4 +19,5 @@ bright_blue = "#82aaff"
 bright_magenta = "#c099ff"
 bright_cyan = "#86e1fc"
 bright_white = "#c8d3f5"
-    
+[themes.component_style]
+lyrics_played = { fg = "#222436", bg = "Magenta" }
