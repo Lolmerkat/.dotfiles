@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.opt.statuscolumn = "%!v:lua.custom_statuscolumn()"
 
 vim.opt.scrolloff = 10
 vim.opt.tabstop = 4

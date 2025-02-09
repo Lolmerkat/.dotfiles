@@ -17,5 +17,8 @@ require("config.autocommand.batch")
 require("config.autocommand.trailing-whitespace")
 require("config.autocommand.ccc")
 
-vim.cmd([[colorscheme tokyonight]])
+-- highlight groups
+require("config.themes.status-column")
 
+-- themes
+require("config.themes.tokyonight")
