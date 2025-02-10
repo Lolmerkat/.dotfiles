@@ -2,6 +2,9 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+-- utils
+require("config.utils.colors")
+
 -- require configurations
 require("config.lazy")
 require("config.remap")

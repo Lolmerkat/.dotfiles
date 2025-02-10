@@ -1,4 +1,3 @@
-require("config.utils.colors")
 require("tokyonight").setup {
     on_highlights = function(hl, colors)
         local colors = interpolate_colors(colors.magenta, colors.fg_gutter, 3)
