@@ -46,8 +46,3 @@ function _G.custom_statuscolumn()
     return string.format("%%#%s#%" .. width .. "d", group, relnum)
   end
 end
-
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = { "NvimTree" },
-    callback = function() vim.opt_local.statuscolumn = "" end
-})

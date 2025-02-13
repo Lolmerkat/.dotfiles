@@ -25,9 +25,6 @@ vim.keymap.set('n', '<leader>T<', ":tabprevious<CR>",
 vim.keymap.set('n', '<leader>T>', ":tabnext<CR>",
     { desc = "Switch to next Tab", noremap = true, silent = true})
 
--- NvimTree
-vim.keymap.set("n", "<leader>pv", ':NvimTreeToggle<CR>', { desc = 'Toggle NvimTree', noremap = true, silent = true})
-
 -- Telescope
 local ts_builtin = require('telescope.builtin')
 vim.keymap.set('n', "<leader>ff", ts_builtin.find_files,
