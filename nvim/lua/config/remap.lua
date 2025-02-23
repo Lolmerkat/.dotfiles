@@ -25,14 +25,6 @@ vim.keymap.set('n', '<leader>T<', ":tabprevious<CR>",
 vim.keymap.set('n', '<leader>T>', ":tabnext<CR>",
     { desc = "Switch to next Tab", noremap = true, silent = true})
 
--- Telescope
-local ts_builtin = require('telescope.builtin')
-vim.keymap.set('n', "<leader>ff", ts_builtin.find_files,
-    { desc = 'Telescope: find files' })
-vim.keymap.set('n', '<leader>fg', ts_builtin.git_files,
-    { desc = 'Telescope: find git' })
-vim.keymap.set('n', '<leader>fb', ts_builtin.buffers,
-    { desc = 'Telescope: find open buffers' })
 
 -- Lazy
 vim.keymap.set('n', '<leader>L', ':Lazy<CR>',
