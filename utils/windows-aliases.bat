@@ -16,3 +16,4 @@ DOSKEY ls=dir /B $*
 DOSKEY mv=move $*
 DOSKEY spt=spotify_player
 DOSKEY :q=exit
+DOSKEY pwd=echo %cd%
