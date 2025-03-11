@@ -1,5 +1,7 @@
 vim.g.mapleader = " "
 
+vim.opt.fileformat = "unix"
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.statuscolumn = "%!v:lua.custom_statuscolumn()"
