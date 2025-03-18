@@ -4,6 +4,12 @@ end
 
 vim.api.nvim_create_autocmd("BufWritePre", {
     pattern = "*",
-    callback = remove_trailing_whitespace
+    callback = function()
+        if vim.bo.filetype ~= 'markdown' then
+            return            
+        else
+            remove_trailing_whitespace()
+        end
+    end
 })
 
