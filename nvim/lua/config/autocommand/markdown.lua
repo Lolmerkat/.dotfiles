@@ -13,7 +13,13 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
                 local output_file = vim.fn.expand('%:r') .. '.pdf'
                 local cmd = string.format('pandoc %s -s -o %s', current_file, output_file)
                 vim.fn.system(cmd)
-                print('Successfully created ' .. output_file)
+               
+                local time = os.date("*t")
+                local hour = time.hour
+                local minute = time.min
+                local second = time.sec
+                local time_str = "[" .. hour .. ":" .. minute .. ":" .. second .. "]"
+                print(time_str .. ' Successfully created ' .. output_file)
             end, { desc = "Pandoc: Create pdf" }
         )
 
