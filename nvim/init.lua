@@ -2,13 +2,16 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+-- require lazy
+require("config.lazy")
+require("config.lsp.core").setup()
+require("config.lsp.lua_ls").setup()
+
 -- utils
 require("config.utils.colors")
 
 -- require configurations
-require("config.lazy")
 require("config.remap")
-require("config.lsp")
 require("config.set")
 require("config.harpoon")
 require("config.lualine")

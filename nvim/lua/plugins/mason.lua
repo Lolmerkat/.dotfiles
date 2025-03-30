@@ -1,4 +1,9 @@
 return {
-	"williamboman/mason.nvim",
-	"williamboman/mason-lspconfig",
+   "williamboman/mason.nvim",
+    opts = {
+        ui = { border = rounded },
+        registries = {
+            "github:mason-org/mason-registry",
+        }
+    }
 }
