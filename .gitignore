@@ -3,7 +3,8 @@
 /spotify-tui
 
 /scoop
-/superfile
+
+superfile/theme
 
 nvim/lazy-lock.json
 
