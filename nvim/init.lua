@@ -4,6 +4,7 @@ vim.g.loaded_netrwPlugin = 1
 
 -- require lazy
 require("config.lazy")
+require("config.lsp.keymap")
 require("config.lsp.core").setup()
 require("config.lsp.lua_ls").setup()
 
