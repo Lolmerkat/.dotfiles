@@ -46,3 +46,13 @@ end, { noremap = false, expr = true })
 -- Ccc
 vim.keymap.set({'n'}, '<leader>pc', "<cmd>CccPick<CR>",
     { desc = "Open Ccc picker", noremap = true, silent = true })
+
+-- LuaSnip
+vim.keymap.set({ "i", "s" }, "<Tab>", function ()
+    local ls = require("luasnip")
+    if ls.expand_or_jumpable() then
+        ls.expand_or_jump()
+    else
+        return "<Tab>"
+    end
+end, { silent = true, expr = true })
