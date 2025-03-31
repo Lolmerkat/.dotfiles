@@ -13,7 +13,6 @@ require("config.utils.colors")
 -- require configurations
 require("config.remap")
 require("config.set")
-require("config.harpoon")
 require("config.lualine")
 require("config.macro")
 

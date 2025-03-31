@@ -34,11 +34,6 @@ vim.keymap.set('n', '<leader>L', ':Lazy<CR>',
 vim.keymap.set('n', '<leader>M', '<cmd>Mason<CR>',
     { desc = "Open Mason", noremap = true, silent = true })
 
--- Harpoon
-local harpoon = require("harpoon")
-vim.keymap.set('n', "<C-a>", function() harpoon:list():add() end,
-    {desc = "Add to harpoon"})
-
 -- Obsidian
 vim.keymap.set('n', 'gf', function()
     if (require('obsidian').util.cursor_on_markdown_link()) then
