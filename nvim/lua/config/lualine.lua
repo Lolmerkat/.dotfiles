@@ -5,7 +5,7 @@ local function refresh_attached_lsps()
   local bufnr = vim.api.nvim_get_current_buf()
 
   -- Fetch the attached clients for the current buffer
-  local clients = vim.lsp.get_active_clients({ bufnr = bufnr })
+  local clients = vim.lsp.get_clients({ bufnr = bufnr })
 
   -- Extract client names
   attached_lsps[bufnr] = {}
