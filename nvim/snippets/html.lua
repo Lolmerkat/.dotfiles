@@ -4,7 +4,7 @@ local t = ls.text_node
 local i = ls.insert_node
 
 return {
-    s("!", {
+    s("!doctype", {
         t({
             "<!DOCTYPE html>",
             "<html>",
@@ -16,12 +16,9 @@ return {
             "</title>",
             "</head>",
             "<body>",
-            "\t\n",
-        }),
-        i(0),
-        t({
+            "",
             "</body>",
             "</html>",
-        })
+        }),
     })
 }
