@@ -9,6 +9,14 @@ return {
         },
         picker = {
             enabled = true,
+            main = {
+                file = false
+            },
+            sources = {
+                explorer = {
+                    hidden = true
+                }
+            }
         },
     },
     keys = {
