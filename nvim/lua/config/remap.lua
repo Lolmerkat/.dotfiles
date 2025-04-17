@@ -56,3 +56,7 @@ vim.keymap.set({ "i", "s" }, "<Tab>", function ()
         return "<Tab>"
     end
 end, { silent = true, expr = true })
+
+-- LSP
+vim.keymap.set('n', "<leader>lR", "<cmd>LspRestart<CR>",
+    { desc = "Restart LSP", noremap = true, silent = true })
