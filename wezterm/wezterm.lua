@@ -19,28 +19,30 @@ config.keys = {
 config.window_decorations = 'RESIZE'
 config.color_scheme = 'Tokyo Night'
 config.use_fancy_tab_bar = false
-config.enable_scroll_bar = true
+config.enable_scroll_bar = false
 config.hide_tab_bar_if_only_one_tab = false
 config.tab_max_width = 25
+config.enable_tab_bar = true
 
 config.colors = {
 	scrollbar_thumb = "#505050",
 	tab_bar = {
-		background = "#202020",
+		background = "None",
 
 		active_tab = {
 			fg_color = "#adadad",
-			bg_color = "#202020",
+			bg_color = "#222436",
 
 			intensity = 'Bold',
-			underline = 'None',
+			underline = 'Single',
 			italic = false,
 			strikethrough = false
 		},
 
 		inactive_tab = {
 			fg_color = "#adadad",
-			bg_color = "#505050",
+			bg_color = "None",
+            intensity = 'Half'
 		},
 
 		inactive_tab_hover = {
@@ -52,7 +54,7 @@ config.colors = {
 
 		new_tab = {
 			fg_color = "#adadad",
-			bg_color = "#505050",
+			bg_color = "None",
 		},
 
 		new_tab_hover = {
