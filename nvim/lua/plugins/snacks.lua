@@ -32,6 +32,7 @@ return {
         { "<leader>pv", function() Snacks.explorer() end, desc = "File Explorer" },
         { "<leader>ff", function() Snacks.picker.files() end, desc = "File Finder" },
         { "<leader>fg", function() Snacks.picker.git_files() end, desc = "Find Git Files" },
+        { "<leader>ft", function() Snacks.picker.todo_comments() end, desc = "Find Todo Comments" },
         { "<leader>z", function() Snacks.zen() end, desc = "Toggle Zen Mode"},
     }
 }
