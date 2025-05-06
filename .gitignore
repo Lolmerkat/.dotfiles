@@ -1,11 +1,8 @@
 /github-copilot
-/whatscli
-/spotify-tui
-
 /scoop
-
-superfile/theme
+/yasb
 
 nvim/lazy-lock.json
-
 spotify-player/app.toml
+superfile/theme
+
