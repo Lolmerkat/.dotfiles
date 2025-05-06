@@ -13,6 +13,14 @@ config.keys = {
     { key = 'l', mods = 'CTRL|SHIFT', action = act.ActivateTabRelative(1) },
     { key = 'h', mods = 'CTRL|ALT', action = act.MoveTabRelative(-1) },
     { key = 'l', mods = 'CTRL|ALT', action = act.MoveTabRelative(1) },
+    { key = 'R', mods = 'CTRL|SHIFT', action = act.PromptInputLine {
+        description = "Enter a new name for the tab",
+        action = wezterm.action_callback(function (window, _, line)
+            if line then
+                window:active_tab():set_title(line)
+            end
+        end)
+    }}
 }
 
 -- This is where you actually apply your config choices
