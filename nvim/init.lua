@@ -7,6 +7,7 @@ require("config.lazy")
 require("config.lsp.keymap")
 require("config.lsp.core").setup()
 require("config.lsp.lua_ls").setup()
+require("config.lsp.ltex").setup()
 
 -- utils
 require("config.utils.colors")
