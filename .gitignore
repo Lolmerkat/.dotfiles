@@ -1,6 +1,7 @@
 /github-copilot
 /scoop
 /yasb
+/Godot
 
 nvim/lazy-lock.json
 spotify-player/app.toml
