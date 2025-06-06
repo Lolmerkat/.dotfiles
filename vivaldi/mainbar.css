@@ -1,0 +1,23 @@
+.mainbar {
+    background-color: #00000000;
+    border-bottom: none;
+}
+
+.UrlBar-AddressField {
+    border-radius: 4px;
+    background-color: #00000055;
+}
+
+.OmniDropdown {
+    background-color: #00000088;
+    border-radius: 4px;
+}
+
+li[aria-selected="true"].OmniLinkItem {
+    background-color: #3300ff77;
+}
+
+.OmniLinkItem:not(.OmniLinkItem--Highlighted):hover {
+    background-color: #e5e5e512;
+}
+

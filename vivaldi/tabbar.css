@@ -1,0 +1,7 @@
+.tabbar-wrapper:has(.tabbar-wrapper) {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: -webkit-fill-available;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
