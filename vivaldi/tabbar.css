@@ -5,3 +5,7 @@
     margin-bottom: 4px;
     overflow: hidden;
 }
+
+.transparent-tabbar .tab.active .tab-header .favicon:not(.svg), .theme-dark .tab.active .tab-header .favicon:not(.svg), .acc-dark.color-behind-tabs-off .tab.active .tab-header .favicon:not(.svg) {
+    filter: none;
+}
