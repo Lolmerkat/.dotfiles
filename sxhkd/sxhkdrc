@@ -1,0 +1,61 @@
+# Move focus
+super + {h, j, k, l}
+	bspc node -f {west, south, north, east}
+
+# Resize
+# expand side
+super + alt + {h, j, k, l}
+    bspc node -z {left -20 0,bottom 0 20, top -20 0, right 20 0}
+# contract side
+super + shift + alt + {h, j, k, l}
+    bspc node -z {right -20 0,top 0 20, bottom -20 0, left 20 0}
+
+# Swap largest and current
+super + n
+    bspc node -s biggest.window
+
+# Make window floating
+super + f
+    bspc node -t floating
+super + shift + f
+    bspc node -t tiled
+
+# Close windows
+super + q
+	bspc node -c
+
+# Desktops
+# Moving relative
+super + ctrl + {h, l}
+    bspc desktop -f {prev, next}
+
+super + alt + {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}
+    bspc desktop -f {I, II, III, IV, V, VI, VII, VIII, IX, X}
+
+super + ctrl + {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}
+    bspc node -d {I, II, III, IV, V, VI, VII, VIII, IX, X}
+
+# Open terminal
+super + Return
+	wezterm
+
+# Reload configuration files
+super + Escape
+    pkill -USR1 -x sxhkd
+
+# Open Application Launcher
+alt + space
+    rofi -show run
+
+ctrl + alt + space
+    bash /home/jan/Pictures/wallpapers/.set_wallpaper.sh
+
+# Volume
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
