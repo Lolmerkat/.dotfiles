@@ -47,6 +47,9 @@ super + Escape
 alt + space
     rofi -show run
 
+alt + Tab
+    rofi -show window
+
 ctrl + alt + space
     bash /home/jan/Pictures/wallpapers/.set_wallpaper.sh
 
