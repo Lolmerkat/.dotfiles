@@ -7,9 +7,9 @@ return {
         explorer = {
             replace_netrw = true
         },
-        image = {
-            enabled = true
-        },
+        -- image = {
+        --     enabled = true
+        -- },
         picker = {
             enabled = true,
             main = {
