@@ -32,6 +32,12 @@ config.hide_tab_bar_if_only_one_tab = false
 config.tab_max_width = 25
 config.enable_tab_bar = true
 
+config.window_padding = {
+    bottom = 0,
+    left = 0,
+    right = 0,
+    top = 0,
+}
 config.colors = {
 	scrollbar_thumb = "#505050",
 	tab_bar = {
