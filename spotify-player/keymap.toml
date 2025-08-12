@@ -1,0 +1,16 @@
+[[keymaps]]
+command = "Quit"
+key_sequence = "C-c"
+
+[[keymaps]]
+command = "PreviousPage"
+key_sequence = "q"
+
+[[keymaps]]
+command = "ResumePause"
+key_sequence = "space space"
+
+[[keymaps]]
+command = "None"
+key_sequence = "space"
+
