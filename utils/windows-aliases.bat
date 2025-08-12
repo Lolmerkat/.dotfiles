@@ -20,6 +20,8 @@ DOSKEY :q=exit
 DOSKEY :qa=exit
 DOSKEY pwd=echo %cd%
 DOSKEY clear=cls
+DOSKEY convert=magick convert
+DOSKEY touch=echo. > $*
 
 :: Git aliases
 DOSKEY gs=git status --short $*
