@@ -4,10 +4,9 @@
 /Godot
 
 nvim/lazy-lock.json
-spotify-player/app.toml
 superfile/theme
 
-deemix/ 
-glow/ 
-whkd/ 
-configstore/ 
+deemix/
+glow/
+whkd/
+configstore/
