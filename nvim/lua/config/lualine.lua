@@ -56,5 +56,5 @@ require("lualine").setup({
             end
         }
     },
-    theme = 'tokyonight'
+    theme = 'auto'
 })
