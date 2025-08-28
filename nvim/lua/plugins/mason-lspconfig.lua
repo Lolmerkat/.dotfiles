@@ -5,9 +5,10 @@ return {
         "neovim/nvim-lspconfig",
     },
     opts = {
-        automatic_installation = true,
-        ensure_installed = {
-            "lua_ls",
+        automatic_enable = {
+            exclude = {
+                "lua_ls"
+            }
         }
     }
 }
