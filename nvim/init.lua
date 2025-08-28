@@ -26,6 +26,9 @@ require("config.autocommand.ccc")
 
 -- highlight groups
 require("config.themes.status-column")
+require("config.themes.hlgroup_override")
 
 -- themes
+require("config.themes.cyberdream")
 require("config.themes.tokyonight")
+require("config.themes.current")
