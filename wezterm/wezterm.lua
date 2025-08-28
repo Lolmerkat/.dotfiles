@@ -1,7 +1,5 @@
--- Pull in the wezterm API
 local wezterm = require 'wezterm'
 local act = wezterm.action
--- This will hold the configuration.
 local config = wezterm.config_builder()
 
 config.keys = {
@@ -20,62 +18,24 @@ config.keys = {
                 window:active_tab():set_title(line)
             end
         end)
-    }}
+    }},
 }
 
--- This is where you actually apply your config choices
-config.window_decorations = 'RESIZE'
-config.color_scheme = 'Tokyo Night'
+config.window_decorations = 'INTEGRATED_BUTTONS|RESIZE'
 config.use_fancy_tab_bar = false
 config.enable_scroll_bar = false
-config.hide_tab_bar_if_only_one_tab = false
+config.hide_tab_bar_if_only_one_tab = true
 config.tab_max_width = 25
 config.enable_tab_bar = true
 
-config.colors = {
-	scrollbar_thumb = "#505050",
-	tab_bar = {
-		background = "None",
-
-		active_tab = {
-			fg_color = "#adadad",
-			bg_color = "#222436",
-
-			intensity = 'Bold',
-			underline = 'Single',
-			italic = false,
-			strikethrough = false
-		},
-
-		inactive_tab = {
-			fg_color = "#adadad",
-			bg_color = "None",
-            intensity = 'Half'
-		},
-
-		inactive_tab_hover = {
-			fg_color = "#adadad",
-			bg_color = "#505050",
-			underline = 'Single',
-			italic = true,
-		},
-
-		new_tab = {
-			fg_color = "#adadad",
-			bg_color = "None",
-		},
-
-		new_tab_hover = {
-			fg_color = "#adadad",
-			bg_color = "#505050",
-			underline = 'Single',
-			italic = true,
-		},
-	}
+config.window_background_opacity = 0.44
+config.win32_system_backdrop = 'Acrylic'
+config.kde_window_background_blur = true
+config.colors = require("cyberdream")
+config.font = wezterm.font_with_fallback {
+    { family = 'JetBrains Mono', weight = 'Medium' },
+    'Noto Color Emoji'
 }
-
-config.font =
-	wezterm.font('JetBrains Mono', { weight = 'Medium'})
 
 -- and finally, return the configuration to wezterm
 return config
