@@ -5,7 +5,8 @@
 /uv
 
 nvim/lazy-lock.json
-superfile/theme
+superfile/theme/*
+!superfile/theme/cyberdream.toml
 
 deemix/
 glow/
