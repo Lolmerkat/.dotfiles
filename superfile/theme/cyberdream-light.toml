@@ -38,7 +38,7 @@ cursor = "#5eff6c"
 correct = "#5eff6c"
 error = "#ff6e5e"
 hint = "#5ea1ff"
-cancel = "#ff9e64"
+cancel = "#ffbd5e"
 # Gradient color can only have two color!
 gradient_color = ["#5ea1ff", "#bd5eff"]
 
@@ -55,8 +55,8 @@ sidebar_divider = "#eaeaea"
 modal_cancel_fg = "#acacac"
 modal_cancel_bg = "#ff6e5e"
 
-modal_confirm_fg = "#4c4048"
+modal_confirm_fg = "#3c4048"
 modal_confirm_bg = "#5eff6c"
 
 help_menu_hotkey = "#5eff6c"
-help_menu_title = "#ffbd53"
+help_menu_title = "#ffbd5e"
