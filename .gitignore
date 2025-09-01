@@ -2,9 +2,12 @@
 /scoop
 /yasb
 /Godot
+/uv
 
 nvim/lazy-lock.json
-superfile/theme
+superfile/theme/*
+!superfile/theme/cyberdream.toml
+!superfile/theme/cyberdream-light.toml
 
 deemix/
 glow/
